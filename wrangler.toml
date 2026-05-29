@@ -13,7 +13,18 @@ compatibility_date = "2025-02-24"
 # API_TOKEN = "example_dev_token"
 # API_HOST = "api.v2board.com"
 UUID = "cd57f6d9-6f50-4486-8faa-ec8d36abe049"
-[observability.logs]
+[observability]
 enabled = false
+head_sampling_rate = 1
+
+[observability.logs]
+enabled = true
+head_sampling_rate = 1
+persist = true
 invocation_logs = true
+
+[observability.traces]
+enabled = false
+persist = true
+head_sampling_rate = 1
 
